@@ -1,0 +1,119 @@
+.entire_figure {
+  margin: 0 auto;
+  border: 1px black solid;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  bottom: -400px;
+}
+
+.stem, .l_leaf, .r_leaf {
+  background-color: #00cc00;
+}
+
+.stem {
+  height: 80px;
+  width: 15px;
+  border-radius: 0 0 7.5px 7.5px;
+  position: absolute;
+  top: 300px;
+  left: 235px;    
+}
+
+.l_leaf, .r_leaf {
+  position: absolute;
+  height: 50px;
+  width: 75px;
+  bottom: 15px;
+  
+}
+
+.l_leaf {
+  left: -75px;
+  border-radius: 100px 60px 60px 100px;
+}
+
+.r_leaf {
+  right: -75px;
+  border-radius: 60px 100px 100px 60px;
+}
+
+.head {
+  height: 120px;
+  width: 200px;
+  background-color: #ffb366;
+  position: absolute;
+  top: 180px;
+  left: 141px;
+  border-radius: 50px
+}
+
+.red_ring {
+  height: 120px;
+  width: 200px;
+  background-color: #ff1a1a;
+  position: absolute;
+  border-radius: 50px;  
+}
+
+.yellow_ring {
+  height: 85px;
+  width: 160px;
+  background-color: #ffd633;
+  position: absolute;
+  border-radius: 50px; 
+  top: 17px;
+  left: 19px;
+}
+
+.inner_head {
+  position: absolute;
+  background-color: #ffffff;
+  height: 60px;
+  width: 130px;
+  border-radius: 50px;
+  top: 12px;
+  left: 15px; 
+}
+
+.l_eye, .r_eye {
+  position: absolute;
+  background-color: black;
+  height: 35px;
+  width: 12px;
+  border-radius: 15px;
+}
+
+.r_eye {
+  top: 10px; 
+  right: 30px;
+}
+
+.l_eye{
+  top: 10px;
+  left: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*Should I get rid of flower head class distinction? I got rid of leaves class because it was unnecessary- the l and r leaves are the only two items that will be affected by the stem via absolute position. 
+
+I will keep it; I might need to move the entire head, and making the red ring, yellow ring, and inner head subserveant to the entire head via absolute position is necessary to preven unnecessary position calculations if one thing gets moved
+
+Head must be absolute compared to the entire figure, not the stem*/
+
+/*The head elements must be positioned absolutely in the following format from outer to inner element:
+red ring
+yellow ring
+inner head
+
+z-index property is only necessary if
+
+*/
+
